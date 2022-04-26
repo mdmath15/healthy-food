@@ -3,33 +3,6 @@ import * as S from "./styles"
 import Carousel from "../Carousel"
 import { posts } from "../../data/data"
 
-const responsive = {
-    desktop: {
-        breakpoint: {
-            max: 3000,
-            min: 1024,
-        },
-        items: 3,
-        partialVisibilityGutter: 40,
-    },
-    mobile: {
-        breakpoint: {
-            max: 650,
-            min: 0,
-        },
-        items: 1,
-        partialVisibilityGutter: 30,
-    },
-    tablet: {
-        breakpoint: {
-            max: 1024,
-            min: 650,
-        },
-        items: 2,
-        partialVisibilityGutter: 30,
-    },
-}
-
 function Blog() {
     return (
         <S.Container id="blog">

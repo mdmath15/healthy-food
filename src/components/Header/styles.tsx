@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components"
+import styled from "styled-components"
 
 export const Container = styled.header`
     width: 100%;
@@ -7,6 +7,7 @@ export const Container = styled.header`
     justify-content: space-between;
     padding: 1rem 3rem;
     z-index: 2;
+   
 
     @media (max-width: 768px) {
         padding: 0.5rem 2rem;

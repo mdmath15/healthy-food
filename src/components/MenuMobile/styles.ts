@@ -1,38 +1,8 @@
-import styled, { keyframes } from "styled-components"
+import styled, { css } from "styled-components"
 
 interface MobileMenuProps {
     mobileMenuActive: boolean
 }
-
-const ScaleUp = keyframes`
-    0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-      -webkit-transform-origin: 100% 0%;
-              transform-origin: 100% 0%;
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-transform-origin: 100% 0%;
-              transform-origin: 100% 0%;
-    }
-`
-
-const ScaleDown = keyframes`
-    0% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-transform-origin: 100% 0%;
-              transform-origin: 100% 0%;
-    }
-    100% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-      -webkit-transform-origin: 100% 0%;
-              transform-origin: 100% 0%;
-    }
-  `
 
 export const Nav = styled.nav<MobileMenuProps>`
     position: absolute;
@@ -45,9 +15,20 @@ export const Nav = styled.nav<MobileMenuProps>`
     height: auto;
     background: ${(props) => props.theme.colors.green};
     z-index: 10;
-    right: 0;
+    right: 0px;
     top: 0;
-    animation: ${(props) => (props.mobileMenuActive ? ScaleUp : ScaleDown)} 0.5s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(50px);
+
+    ${(props) =>
+        props.mobileMenuActive &&
+        css`
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0px);
+        `}
 
     @media (max-width: 600px) {
         svg {

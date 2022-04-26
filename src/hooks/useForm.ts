@@ -67,26 +67,27 @@ export const useForm = (initialState: FormFields, errors: Errors) => {
         }
     }
 
-    const adressCompleter = (event: { target: { value: string } }) => {
+    const adressCompleter = (event: { target: { value: string } }): boolean | void => {
         const { value } = event.target
-
-        getAdress(value.replace(/\D/g, ""))
-            .then((data) => {
-                setForm({
-                    ...form,
-                    street: data.logradouro,
-                    city: data.localidade,
-                    state: data.uf,
+        if (value.length > 7) {
+            getAdress(value.replace(/\D/g, ""))
+                .then((data) => {
+                    setForm({
+                        ...form,
+                        street: data.logradouro,
+                        city: data.localidade,
+                        state: data.uf,
+                    })
                 })
-            })
-            .catch(() => {
-                setForm({
-                    ...form,
-                    street: "",
-                    city: "",
-                    state: "",
+                .catch((err) => {
+                    setForm({
+                        ...form,
+                        street: "Street not found",
+                        city: "City not foound",
+                        state: "State not found",
+                    })
                 })
-            })
+        }
     }
 
     return { form, error, onChange, adressCompleter, validation }
