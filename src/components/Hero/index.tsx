@@ -1,5 +1,5 @@
 import * as S from "./styles"
-import backgroundImg from "../../assets/illustration.svg"
+import backgroundImg from "../../assets/Illustration.svg"
 import Header from "../Header"
 import { BiSearch } from "react-icons/bi"
 
