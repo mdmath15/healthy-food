@@ -4,7 +4,7 @@ Landing-page desenvolvida por Matheus para um teste de processo seletivo.
 
 ## 💻 Objetivo
 
-Desenvolver uma Landing-page utilizando React, totalmente responsiva, com uma página de SingUp com um formulário que autocompleta o endereço através da API dos correios e permacene os dados no LocalStorage e nos Cookies.
+Desenvolver uma Landing-page utilizando React, totalmente responsiva, uma página de SingUp com um formulário que autocompleta o endereço através da API dos correios e permacene os dados no LocalStorage e nos Cookies.
 
 ## ⚙️ Funcionalidades 
   - Responsividade
