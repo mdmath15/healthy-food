@@ -12,7 +12,7 @@ function CardRecipe({ title, photo }: RecipesProps) {
             <img src={photo} alt="Comida" />
             <S.TextContainer>
                 <h4>{title}</h4>
-                <Button ml="0px">See Recipe</Button>
+                <Button ml="0px" wd="120px">See Recipe</Button>
             </S.TextContainer>
         </S.Container>
     )

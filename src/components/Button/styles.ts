@@ -2,10 +2,16 @@ import styled from "styled-components"
 
 type ButtonProps = {
     ml?: string,
+    mr?: string,
+    mt?: string,
+    mb?: string,
+    wd?: string,
+    hg?: string,
 }
 
 export const Button = styled.button<ButtonProps>`
     padding: 12px;
+    width: ${(props) => props.wd ?? "auto"};
     margin-left: ${(props) => props.ml ?? "8px"};
     border-radius: 4px;
     border: none;
