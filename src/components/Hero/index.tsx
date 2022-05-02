@@ -2,6 +2,7 @@ import * as S from "./styles"
 import backgroundImg from "../../assets/Illustration.svg"
 import Header from "../Header"
 import { BiSearch } from "react-icons/bi"
+import Button from "../Button"
 
 function Hero() {
     return (
@@ -11,9 +12,9 @@ function Hero() {
                 <S.HeroContent>
                     <h2>Ready for Trying a new recipe?</h2>
                     <input placeholder="Search a new recipe" />
-                    <button>
+                    <Button>
                         <BiSearch />
-                    </button>
+                    </Button>
                 </S.HeroContent>
                 <S.HeroBackground>
                     <img src={backgroundImg} alt="background" />

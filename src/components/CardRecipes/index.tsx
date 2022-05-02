@@ -1,3 +1,4 @@
+import Button from "../Button"
 import * as S from "./styles"
 
 type RecipesProps = {
@@ -11,7 +12,7 @@ function CardRecipe({ title, photo }: RecipesProps) {
             <img src={photo} alt="Comida" />
             <S.TextContainer>
                 <h4>{title}</h4>
-                <button>See Recipe</button>
+                <Button ml="0px">See Recipe</Button>
             </S.TextContainer>
         </S.Container>
     )

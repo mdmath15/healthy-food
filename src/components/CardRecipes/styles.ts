@@ -61,27 +61,4 @@ export const TextContainer = styled.div`
             padding-top: 0.5rem;
         }
     }
-
-    button {
-        width: 100px;
-        padding: 12px;
-        margin-bottom: 1rem;
-
-        border: none;
-        border-radius: 4px;
-        background-color: ${(props) => props.theme.colors.green};
-        color: ${(props) => props.theme.colors.white};
-        transition: 0.3s;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        cursor: pointer;
-
-        @media (min-width: 600px) and (max-width: 768px) {
-            padding: 16px;
-            width: 120px;
-        }
-
-        &:hover {
-            transform: scale(1.1);
-        }
-    }
 `

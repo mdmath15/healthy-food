@@ -68,21 +68,6 @@ export const Content = styled.div`
             color: ${(props) => props.theme.colors.grey};
         }
     }
-
-    button {
-        padding: 12px;
-        margin-left: 8px;
-        border-radius: 4px;
-        border: none;
-        background-color: ${(props) => props.theme.colors.green};
-        color: ${(props) => props.theme.colors.white};
-        cursor: pointer;
-        transition: 0.3s;
-
-        &:hover {
-            transform: scale(1.1);
-        }
-    }
 `
 export const Background = styled.div`
     width: 50%;
