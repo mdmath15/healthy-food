@@ -1,6 +1,7 @@
 import * as S from "./styles"
 import BgMembership from "../../assets/bloco_final_image.svg"
 import Footer from "../Footer"
+import Button from "../Button"
 
 function Membership() {
     return (
@@ -9,7 +10,7 @@ function Membership() {
                 <S.Content>
                     <h2>Join our membership to get special offer</h2>
                     <input placeholder="Enter your email address" />
-                    <button>Join</button>
+                    <Button>Join</Button>
                 </S.Content>
                 <S.Background>
                     <img src={BgMembership} alt="background" />

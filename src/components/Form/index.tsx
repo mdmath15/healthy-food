@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import { useForm } from "../../hooks/useForm"
+import Button from "../Button"
 import * as S from "./styles"
 
 function Form() {
@@ -116,7 +117,7 @@ function Form() {
                 onBlur={validation}
             />
             {error.city && <span>{error.city}</span>}
-            <button>Submit</button>
+            <Button>Submit</Button>
         </S.Form>
     )
 }

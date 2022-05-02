@@ -84,24 +84,4 @@ export const Content = styled.section`
             text-align: center;
         }
     }
-
-    button {
-        width: 132px;
-        padding: 1rem;
-        border: none;
-        background-color: ${(props) => props.theme.colors.green};
-        color: ${(props) => props.theme.colors.white};
-        border-radius: 4px;
-        transition: 0.3s;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        cursor: pointer;
-
-        @media (min-width: 768px) and (max-width: 1024px) {
-            align-self: center;
-        }
-
-        &:hover {
-            transform: scale(1.1);
-        }
-    }
 `

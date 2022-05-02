@@ -1,5 +1,6 @@
 import * as S from "./styles"
 import BgServices from "../../assets/bloco_services.svg"
+import Button from "../Button"
 
 function BestServices() {
     return (
@@ -21,7 +22,7 @@ function BestServices() {
                     A small river named Duden flows by their place and supplies it with the
                     necessary regelialia.
                 </p>
-                <button>Know More</button>
+                <Button>Know More</Button>
             </S.Content>
         </S.Container>
     )
