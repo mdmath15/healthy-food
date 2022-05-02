@@ -13,6 +13,7 @@ export const Button = styled.button<ButtonProps>`
     padding: 12px;
     width: ${(props) => props.wd ?? "auto"};
     margin-left: ${(props) => props.ml ?? "8px"};
+    margin-top: ${(props) => props.mt ?? "0"};
     border-radius: 4px;
     border: none;
     background-color: ${(props) => props.theme.colors.green};

@@ -117,7 +117,7 @@ function Form() {
                 onBlur={validation}
             />
             {error.city && <span>{error.city}</span>}
-            <Button>Submit</Button>
+            <Button mt="8px">Submit</Button>
         </S.Form>
     )
 }
