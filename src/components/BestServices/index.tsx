@@ -22,7 +22,7 @@ function BestServices() {
                     A small river named Duden flows by their place and supplies it with the
                     necessary regelialia.
                 </p>
-                <Button>Know More</Button>
+                <Button wd="120px">Know More</Button>
             </S.Content>
         </S.Container>
     )

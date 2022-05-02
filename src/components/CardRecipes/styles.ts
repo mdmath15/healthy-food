@@ -26,9 +26,8 @@ export const TextContainer = styled.div`
     text-align: start;
     padding: 0rem 2rem;
 
-    @media (min-width: 1440px)  {
-        height: 180px;
-
+    @media (min-width: 1024px)  {
+        padding: 1rem 2rem
     }
 
 
