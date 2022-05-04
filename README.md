@@ -1,4 +1,4 @@
-# Healthy-Food :seedling:                               [Site do Projeto](https://healthy-food-seven.vercel.app/)
+# Healthy-Food :seedling:                               [Site do Projeto](https://healthy-food.surge.sh/)
 
 Landing-page desenvolvida por Matheus para um teste de processo seletivo.
 
