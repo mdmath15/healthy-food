@@ -67,10 +67,10 @@ export const useForm = (initialState: FormFields, errors: Errors) => {
         }
     }
 
-    const adressCompleter = (event: { target: { value: string } }): void => {
+    const adressCompleter = async (event: { target: { value: string } }): void => {
         const { value } = event.target
         if (value.length > 7) {
-            getAdress(value.replace(/\D/g, ""))
+            await getAdress(value.replace(/\D/g, ""))
                 .then(({data}) => {
                     setForm({
                         ...form,
