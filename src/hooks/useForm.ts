@@ -67,7 +67,7 @@ export const useForm = (initialState: FormFields, errors: Errors) => {
         }
     }
 
-    const adressCompleter = (event: { target: { value: string } }): boolean | void => {
+    const adressCompleter = (event: { target: { value: string } }): void => {
         const { value } = event.target
         if (value.length > 7) {
             getAdress(value.replace(/\D/g, ""))
