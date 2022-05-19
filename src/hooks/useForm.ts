@@ -71,7 +71,7 @@ export const useForm = (initialState: FormFields, errors: Errors) => {
         const { value } = event.target
         if (value.length > 7) {
             getAdress(value.replace(/\D/g, ""))
-                .then((data) => {
+                .then(({data}) => {
                     setForm({
                         ...form,
                         street: data.logradouro,
