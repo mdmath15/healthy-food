@@ -67,7 +67,7 @@ export const useForm = (initialState: FormFields, errors: Errors) => {
         }
     }
 
-    const adressCompleter = async (event: { target: { value: string } }): void => {
+    const adressCompleter = async (event: { target: { value: string } }): Promise<void> => {
         const { value } = event.target
         if (value.length > 7) {
             await getAdress(value.replace(/\D/g, ""))
